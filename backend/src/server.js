@@ -1,9 +1,15 @@
 import express from "express";
 import path from "path";
 import { ENV } from "./config/env.js";
+import { connectDB } from "./config/db.js";
+import { clerkMiddleware } from "@clerk/express";
+
 const app = express();
 
 const __dirname = path.resolve();
+
+app.use(express.json());
+app.use(clerkMiddleware());
 
 app.get("/api", (req, res) => {
     res.status(200).json({ message: "Welcome to the server" });
@@ -19,4 +25,5 @@ if (ENV.NODE_ENV === "production") {
 
 app.listen(ENV.PORT, () => {
     console.log(`server is up and running on port ${ENV.PORT} `);
+    connectDB();
 });

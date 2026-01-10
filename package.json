@@ -17,5 +17,8 @@
     "bugs": {
         "url": "https://github.com/abdallahgama1/expo-ecommerce/issues"
     },
-    "homepage": "https://github.com/abdallahgama1/expo-ecommerce#readme"
+    "homepage": "https://github.com/abdallahgama1/expo-ecommerce#readme",
+    "dependencies": {
+        "mongoose": "^8.19.3"
+    }
 }
