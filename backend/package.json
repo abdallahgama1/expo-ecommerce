@@ -12,10 +12,12 @@
     "license": "ISC",
     "dependencies": {
         "@clerk/clerk-react": "^5.59.3",
+        "@clerk/express": "^1.7.62",
         "cloudinary": "^2.8.0",
         "dotenv": "^17.2.3",
         "expo-ecommerce": "file:..",
         "express": "^5.2.1",
+        "inngest": "^3.49.1",
         "mongoose": "^8.19.3"
     }
 }
